@@ -1,0 +1,206 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Imported Workspace
+meta:
+  id: wrk_5c424e05b69f4fbfa0f54a73e65a639e
+  created: 1765233165139
+  modified: 1765233165139
+  description: ""
+collection:
+  - url: http://localhost:3000/shoppingList/create
+    name: shoppingList/create
+    meta:
+      id: req_69ac5e3e6156404d8445d84d30169f21
+      created: 1765233165142
+      modified: 1765233643201
+      isPrivate: false
+      description: ""
+      sortKey: -1765233165142
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "userId": "65ab12cd34ef56ab78cd90ef",
+          "title": "Groceries Test"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/shoppingList/listByUser
+    name: shoppingList/listByUser
+    meta:
+      id: req_10abaef9d2d24986a18c59020ee85cfc
+      created: 1765233165146
+      modified: 1765233165146
+      isPrivate: false
+      description: ""
+      sortKey: -1765233165146
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "userId": "602f1f5b8b1d3c1a88a7e7d1"
+        }
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/shoppingList/get
+    name: shoppingList/get
+    meta:
+      id: req_fc95cd69207d4ed7a6933af717a0d502
+      created: 1765233165147
+      modified: 1765236110937
+      isPrivate: false
+      description: ""
+      sortKey: -1765233165147
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "shoppingListId": "the-id-you-think-exists"
+        }
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/shoppingList/delete
+    name: shoppingList/delete
+    meta:
+      id: req_88833ff959ac4139b0beefae2be6dc40
+      created: 1765233165149
+      modified: 1765233165149
+      isPrivate: false
+      description: ""
+      sortKey: -1765233165149
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "shoppingListId": "<PUT_LIST_ID_HERE>"
+        }
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/listItem/add
+    name: listItem/add
+    meta:
+      id: req_e0ee1f5a0a554bda83856325b63446ab
+      created: 1765233165151
+      modified: 1765237726236
+      isPrivate: false
+      description: ""
+      sortKey: -1765233165151
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "shoppingListId": "693753edbd424500767744a3",
+          "name": "Milk",
+          "quantity": 2
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/listItem/update
+    name: listItem/update
+    meta:
+      id: req_2ba32a16d3314f72933696dfe4a79399
+      created: 1765233165155
+      modified: 1765554335428
+      isPrivate: false
+      description: ""
+      sortKey: -1765233165155
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "shoppingListId": "<PUT_LIST_ID_HERE>",
+          "itemId": "<PUT_ITEM_ID_HERE>",
+          "checked": true
+        }
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/listItem/delete
+    name: listItem/delete
+    meta:
+      id: req_b197c94109b4432e9aeae517481f2381
+      created: 1765233165157
+      modified: 1765233165157
+      isPrivate: false
+      description: ""
+      sortKey: -1765233165157
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "shoppingListId": "<PUT_LIST_ID_HERE>",
+          "itemId": "<PUT_ITEM_ID_HERE>"
+        }
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_263ee57373f38199650d3a6134ae5c3b44d7b0f9
+    created: 1765233165167
+    modified: 1765233165167
+environments:
+  name: Base Environment
+  meta:
+    id: env_263ee57373f38199650d3a6134ae5c3b44d7b0f9
+    created: 1765233165160
+    modified: 1765233165160
+    isPrivate: false
